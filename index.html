@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>Spotify</title>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="spotify.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="container">
+	  <div class="jumbotron">
+	    <h1>Spøtify</h1> 
+	    <p>The Fake Spotify</p> 
+	  </div>
+	</div>
+
+	<div class="container search">
+	  <form class="form-horizontal form-artist">
+	  <div class="form-group">
+	    <label class="control-label col-sm-2 search-artist" for="email">Search Song:</label>
+	    <div class="col-sm-8">
+	      <input type="search" class="form-control" id="search" placeholder="Search...">
+	    </div>
+	    <div class="col-sm-2">
+	      <button type="submit" class="btn btn-success" id="search">Submit</button>
+	    </div>
+	   </div>
+	  </form>
+  	</div>
+
+	<div class="widget">
+
+		<div class="header">
+
+		<!-- Try adding/removing these classes: -->
+		<!-- disabled -->
+		<!-- playing -->
+		<div id="btn-play" class="btn-play" value=""></div>
+
+		<div class="metadata">
+		  <p class="title">Hunger of The Pine</p>
+		  <p class="author">alt-J</p>
+
+		  <div class="seekbar">
+		    <progress value="5" max="30"></progress>
+		  </div>
+		</div>
+		</div>
+		<div class="cover">
+		<img id="cover" src="https://i.scdn.co/image/04da6dfc1f5f45fdeba938a0cc71cf372524fd43">
+		</div>
+
+		<audio id="audio" src="https://p.scdn.co/mp3-preview/8e9c5ffdc38e91659bfe8b6bd44650dfc25a3d31" class="js-player"></audio>
+	</div>
+
+</body>
+</html>
